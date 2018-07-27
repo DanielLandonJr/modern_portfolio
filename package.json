@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DanielLandonJr/profile.git"
+    "url": "git+https://github.com/DanielLandonJr/portfolio.git"
   },
   "author": "Daniel C. Landon Jr.",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DanielLandonJr/profile/issues"
+    "url": "https://github.com/DanielLandonJr/portfolio/issues"
   },
-  "homepage": "https://github.com/DanielLandonJr/profile#readme",
+  "homepage": "https://github.com/DanielLandonJr/portfolio#readme",
   "dependencies": {
     "node-sass": "^4.9.2",
     "npm": "^6.2.0"

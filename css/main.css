@@ -6,8 +6,41 @@
 */
 /* ~~~~~~~~~~~~~~~ globals ~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~ mixins ~~~~~~~~~~~~~~~ */
+/*
+
+*/
+/* ~~~~~~~~~~~~~~~ menu start ~~~~~~~~~~~~~~~ */
+/*
+*/
+.menu_button {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  z-index: 3;
+  cursor: pointer;
+  transition: all 1s ease-out; }
+  .menu_button .menu_button-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #fff;
+    transition: all 1s ease-out; }
+  .menu_button.close {
+    transform: rotate(180deg); }
+    .menu_button.close .menu_button-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px); }
+    .menu_button.close .menu_button-line:nth-child(2) {
+      opacity: 0; }
+    .menu_button.close .menu_button-line:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px); }
+
+/*
+
+*/
+/* ~~~~~~~~~~~~~~~ menu end ~~~~~~~~~~~~~~~ */
+/*
+*/
 * {
-  box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
