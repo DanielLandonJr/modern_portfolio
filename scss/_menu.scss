@@ -15,6 +15,7 @@
   @include easeOut();
 
   .menu_button-line {
+    /* ~~~~~~~~~~~~~~~  */
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
@@ -24,22 +25,27 @@
 
   // fancy menu button
   &.close {
+    /* ~~~~~~~~~~~~~~~  */
     transform: rotate(180deg);
 
     .menu_button-line {
+      /* ~~~~~~~~~~~~~~~  */
       // rotate first line
       &:nth-child(1) {
+        /* ~~~~~~~~~~~~~~~  */
         transform: rotate(45deg) translate(5px, 5px);
         background-color: $secondary-color-light;
       }
 
       // hide second line
       &:nth-child(2) {
+        /* ~~~~~~~~~~~~~~~  */
         opacity: 0;
       }
 
       // rotate last line
       &:nth-child(3) {
+        /* ~~~~~~~~~~~~~~~  */
         transform: rotate(-45deg) translate(7px, -6px);
         background-color: $secondary-color-light;
       }
@@ -55,12 +61,14 @@
   visibility: hidden;
 
   &.show {
+    /* ~~~~~~~~~~~~~~~  */
     visibility: visible;
   }
 
   // menu_branding & menu_nav
   &_branding,
   &_nav {
+    /* ~~~~~~~~~~~~~~~  */
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -72,6 +80,7 @@
     @include easeOut();
 
     &.show {
+      /* ~~~~~~~~~~~~~~~  */
       // when show class is added we want to slide the two items in
       transform: translate3d(0, 0, 0);
     }
@@ -79,6 +88,7 @@
 
   // menu_nav
   &_nav {
+    /* ~~~~~~~~~~~~~~~  */
     margin: 0;
     padding: 0;
     background: $primary-color_dark;
@@ -88,23 +98,27 @@
 
     // menu_nav-item
     &-item {
+      /* ~~~~~~~~~~~~~~~  */
       // slide in from right
       transform: translate3d(600px, 0, 0);
       @include easeOut();
 
       &.show {
+        /* ~~~~~~~~~~~~~~~  */
         // when show class is added we want to slide the two items in
         transform: translate3d(0, 0, 0);
       }
 
       // color the a tag inside the link with class of current
       &.current > a {
+        /* ~~~~~~~~~~~~~~~  */
         color: $secondary-color_light;
       }
     }
 
     // menu_nav-link
     &-link {
+      /* ~~~~~~~~~~~~~~~  */
       display: inline-block;
       position: relative;
       font-size: 32px;
@@ -116,17 +130,20 @@
       @include easeOut();
 
       &:hover {
+        /* ~~~~~~~~~~~~~~~  */
         color: $secondary-color_light;
       }
     }
   }
 
   &_branding {
+    /* ~~~~~~~~~~~~~~~  */
     background: $primary-color;
     // slide in from bottom
     transform: translate3d(0, 100%, 0);
 
     &-portrait {
+      /* ~~~~~~~~~~~~~~~  */
       width: 250px;
       height: 250px;
       background: url('../img/portrait.jpg');

@@ -9,6 +9,10 @@ const Portfolio = (() => {
   // initial state of menu
   let showMenu = false;
 
+  document.addEventListener('DOMContentLoaded', () => {
+    console.log('javascript loaded ...');
+  });
+
   const loadEventListeners = () => {
     menuBtn.addEventListener('click', toggleMenu);
   };
@@ -34,10 +38,6 @@ const Portfolio = (() => {
       showMenu = false;
     }
   };
-
-  document.addEventListener('DOMContentLoaded', () => {
-    console.log('javascript loaded ...');
-  });
 
   // public methods
   return {
