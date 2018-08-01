@@ -68,21 +68,15 @@
     }
   }
 
-  // .menu_nav,
-  // .menu_branding {
-  //   float: none;
-  //   width: 100%;
-  //   min-height: 0;
-
-  //   &.show {
-  //     transform: translate3d(0, 0, 0);
-  //   }
-  // }
-
-  // .menu_nav {
-  //   height: 75vh;
-  //   transform: translate3d(100%, 0, 0);
-  // }
+  .about-info {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'bioimage'
+      'bio'
+      'job1'
+      'job2'
+      'job3';
+  }
 }
 
 // smart phones

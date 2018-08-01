@@ -19,7 +19,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeOut();
   }
 
@@ -34,7 +34,7 @@
       &:nth-child(1) {
         /* ~~~~~~~~~~~~~~~  */
         transform: rotate(45deg) translate(5px, 5px);
-        background-color: $secondary-color-light;
+        background-color: set-text-color($primary-color);
       }
 
       // hide second line
@@ -47,7 +47,7 @@
       &:nth-child(3) {
         /* ~~~~~~~~~~~~~~~  */
         transform: rotate(-45deg) translate(7px, -6px);
-        background-color: $secondary-color-light;
+        background-color: set-text-color($primary-color);
       }
     }
   }
@@ -125,7 +125,7 @@
       text-transform: uppercase;
       padding: 1rem 0;
       font-weight: 400;
-      color: #fff;
+      color: set-text-color($primary-color);
       text-decoration: none;
       @include easeOut();
 
@@ -148,7 +148,7 @@
       height: 250px;
       background: url('../img/portrait.jpg');
       border-radius: 50%;
-      border: solid 2px $secondary-color;
+      border: solid 3px $secondary-color;
     }
   }
 }

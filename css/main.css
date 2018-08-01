@@ -1,5 +1,5 @@
 /* ~~~~~~~~~~~~~~~ globals ~~~~~~~~~~~~~~~ */
-/* ~~~~~~~~~~~~~~~ mixins ~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~ mixins & functions ~~~~~~~~~~~~~~~ */
 /*
 
 */
@@ -65,7 +65,7 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%; }
+  min-height: calc(100vh - 60px); }
   main .icons {
     /* ~~~~~~~~~~~~~~~  */
     margin-top: 1rem; }
@@ -116,14 +116,14 @@ main {
       .menu_button.close .menu_button-line:nth-child(1) {
         /* ~~~~~~~~~~~~~~~  */
         transform: rotate(45deg) translate(5px, 5px);
-        background-color: #b2af3d; }
+        background-color: #fff; }
       .menu_button.close .menu_button-line:nth-child(2) {
         /* ~~~~~~~~~~~~~~~  */
         opacity: 0; }
       .menu_button.close .menu_button-line:nth-child(3) {
         /* ~~~~~~~~~~~~~~~  */
         transform: rotate(-45deg) translate(7px, -6px);
-        background-color: #b2af3d; }
+        background-color: #fff; }
 
 .menu {
   position: fixed;
@@ -189,7 +189,7 @@ main {
       height: 250px;
       background: url("../img/portrait.jpg");
       border-radius: 50%;
-      border: solid 2px #808000; }
+      border: solid 3px #808000; }
 
 .menu_nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -209,6 +209,44 @@ main {
 /* ~~~~~~~~~~~~~~~ menu end ~~~~~~~~~~~~~~~ */
 /*
 */
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3'; }
+  .about-info .bio-image {
+    /* ~~~~~~~~~~~~~~~  */
+    grid-area: bioimage;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 50%;
+    border: solid 3px #808000; }
+  .about-info .bio {
+    /* ~~~~~~~~~~~~~~~  */
+    grid-area: bio;
+    font-size: 1.5rem; }
+  .about-info .job-1 {
+    /* ~~~~~~~~~~~~~~~  */
+    grid-area: job1; }
+  .about-info .job-2 {
+    /* ~~~~~~~~~~~~~~~  */
+    grid-area: job2; }
+  .about-info .job-3 {
+    /* ~~~~~~~~~~~~~~~  */
+    grid-area: job3; }
+  .about-info .job {
+    background: rgba(179, 67, 176, 0.5);
+    padding: 0.5rem;
+    border-bottom: solid 3px #808000; }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #4f0053;
+  color: #fff;
+  height: 60px; }
+
 /*
 
 */
@@ -255,7 +293,10 @@ main {
       /* ~~~~~~~~~~~~~~~  */
       background: url("../img/portrait_small.jpg");
       width: 140px;
-      height: 140px; } }
+      height: 140px; }
+  .about-info {
+    grid-template-columns: 1fr;
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3'; } }
 
 @media screen and (max-width: 500px) {
   /* ~~~~~~~~~~~~~~~ smaller than 500px ~~~~~~~~~~~~~~~ */
