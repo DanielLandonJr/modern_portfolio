@@ -20,7 +20,7 @@ I like the look and feel, may use this for my own portfolio. Originally did this
 
 To create a local copy of the final project run ...
 
-`npm run deplolyLocal'
+`npm run deplolyLocal`
 
 ... This will create a dist folder, create all sub folders, copy all necessary files to subfolders and minify the css.
 
