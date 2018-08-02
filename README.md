@@ -26,8 +26,6 @@ To create a local copy of the final project run ...
 
 ## Deploy Remote
 
-`npm run gh-pages`
-
 To deploy final project to GH-Pages ...
 
 `npm run deplolyRemote'
