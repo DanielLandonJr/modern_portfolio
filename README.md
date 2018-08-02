@@ -1,7 +1,9 @@
-# Portfolio
+# Modern Portfolio
 
-Attempt, using video series from Traversy media, to create a visually appealing portfolio.
+Modern responsive portfolio layout.
 
-I am good at the back end of things, what goes on under the hood. At this point my visual design skills are some-what lacking...this I am working on. For now this will work nicely for what I need.
+- Minimal JavaScript, used to open close menu.
+- NPM used to run SASS and deploy using GH-Pages (package.json file modified with scripts to allow commands to run properly).
+- Advanced SASS features used such as @content, @extend, @function, @if, @else, @return ... etc
 
-Working with SASS. Nice mixin work for media queries and various other "options" that can be made using mixins.
+I like the look and feel, may use this for my own portfolio. Originally did this project off of a youttube demo from Traversy Media to learn more advanced SASS functionality.

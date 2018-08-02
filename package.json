@@ -1,23 +1,25 @@
 {
-  "name": "profile",
+  "name": "modern_portfolio",
   "version": "1.0.0",
   "description": "Responsive portfolio",
   "main": "index.js",
+  "homepage": "https://daniellandonjr.github.io/modern_portfolio",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "echo \"SASS Starting\" && node-sass -w scss/ -o css/ --recursive"
+    "sass": "echo \"SASS Starting\" && node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "echo \"Deploying Project To GH-Pages\" && gh-pages -d /"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DanielLandonJr/portfolio.git"
+    "url": "git+https://github.com/DanielLandonJr/modern_portfolio.git"
   },
   "author": "Daniel C. Landon Jr.",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DanielLandonJr/portfolio/issues"
+    "url": "https://github.com/DanielLandonJr/modern_portfolio/issues"
   },
-  "homepage": "https://github.com/DanielLandonJr/portfolio#readme",
   "dependencies": {
+    "gh-pages": "^1.2.0",
     "node-sass": "^4.9.2",
     "npm": "^6.2.0"
   }
