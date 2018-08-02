@@ -28,7 +28,7 @@ To create a local copy of the final project run ...
 
 To deploy final project to GH-Pages ...
 
-`npm run deplolyRemote'
+`npm run deplolyRemote`
 
 ... This will create a dist folder, create all sub folders, copy all necessary files to subfolders, minify the css and deply to gh-pages.
 
