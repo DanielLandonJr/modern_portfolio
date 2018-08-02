@@ -12,16 +12,17 @@
     "makeCss": "echo \"Creating New CSS Folder\" & mkdir .\\dist\\css",
     "makeImg": "echo \"Creating New IMG Folder\" & mkdir .\\dist\\img",
     "makeJs": "echo \"Creating New JS Folder\" & mkdir .\\dist\\js",
-    "makePages": "echo \"Creating PAGES Folder\" & mkdir .\\dist\\pages",
-    "createDist": "echo \"Create FOLDERS Started ...\" & npm run removeDist & npm run makeDist & npm run makeCss & npm run makeImg & npm run makeJs & npm run makePages",
+    "makePages": "echo \"Creating New PAGES Folder\" & mkdir .\\dist\\pages",
+    "createDist": "echo \"... => Create FOLDERS Started <= ...\" & npm run removeDist & npm run makeDist & npm run makeCss & npm run makeImg & npm run makeJs & npm run makePages",
     "copyImg": "echo \"Copying Images from DEV to DIST\" & cp -rf dev/img/*.jpg dist/img",
     "copyJs": "echo \"Copying Javascript from DEV to DIST\" && cp -rf dev/js/*.js dist/js",
     "copyPages": "echo \"Copying Pages from DEV to DIST\" && cp -rf dev/pages/*.html dist/pages",
     "copyIndex": "echo \"Copying Index from DEV to DIST\" && cp -rf dev/index*.html dist",
-    "copyFiles": "echo \"Copy FILES Started ...\" & npm run copyImg & npm run copyJs & npm run copyPages & npm run copyIndex",
-    "minifyCss": "echo \"Minifying CSS Started ...\" & uglifycss dev/css/main.css > dist/css/main.min.css",
-    "gh-pages": "echo \"Deploying Project To GH-Pages\" && gh-pages -d dist",
-    "deploy": " && echo \"Deployment Started\" && echo \"Deployment Completed\""
+    "copyFiles": "echo \"... => Copy FILES Started <= ...\" & npm run copyImg & npm run copyJs & npm run copyPages & npm run copyIndex",
+    "minifyCss": "echo \"... => Minifying CSS <= ...\" & uglifycss dev/css/main.css > dist/css/main.min.css",
+    "gh-pages": "echo \"... => Deploying Project To GH-Pages <= ...\" && gh-pages -d dist",
+    "deployLocal": "echo \"... => Deploy LOCAL Started <= ...\" & npm run createDist & npm run copyFiles & npm run minifyCss & echo \"Deploy LOCAL Complete\"",
+    "deployRemote": "echo \"... => Deploy REMOTE Started <= ...\" & npm run createDist & npm run copyFiles & npm run minifyCss & npm run gh-pages & echo \"... => Deploy REMOTE Complete <= ...\""
   },
   "repository": {
     "type": "git",

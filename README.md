@@ -16,8 +16,22 @@ I like the look and feel, may use this for my own portfolio. Originally did this
 
 `npm run sass`
 
-## Deploy
+## Deploy Local Copy
+
+To create a local copy of the final project run ...
+
+`npm run deplolyLocal'
+
+... This will create a dist folder, create all sub folders, copy all necessary files to subfolders and minify the css.
+
+## Deploy Remote
 
 `npm run gh-pages`
 
-- Modify package.json to point to your github repo instaed of mine.
+To deploy final project to GH-Pages ...
+
+`npm run deplolyRemote'
+
+... This will create a dist folder, create all sub folders, copy all necessary files to subfolders, minify the css and deply to gh-pages.
+
+If you do not have a gh-pages branch one will be created for you autoMagically.
