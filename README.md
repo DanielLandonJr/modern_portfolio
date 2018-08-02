@@ -6,6 +6,7 @@ Modern responsive portfolio layout.
 - NPM used to run SASS and deploy using GH-Pages (package.json file modified with scripts to allow commands to run properly).
 - Advanced SASS features used such as @content, @extend, @function, @if, @else, @return ... etc
 - The minified css/js are not obfuscated. You can run the code through a bueatfier and it will sort it out with the correct names of what you are looking for. Makes smaller files for downloads but still allows someone to read them and understand what is going on.
+- Created bin folder and a shell script for building the distribution folder. I like this as it keeps the package.json file clean
 - No that picture is not me...its just a placeholder :).
 
 I like the look and feel, may use this for my own portfolio. Originally did this project off of a youttube demo from Traversy Media to learn more advanced SASS functionality.
