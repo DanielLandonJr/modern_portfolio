@@ -12,7 +12,8 @@
 body {
   @include background();
   background: $primary-color;
-  color: set-text-color($primary-color_dark);
+  // color: set-text-color($primary-color_dark);
+  color: set-text-color(primary);
   width: 100%;
   height: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -91,7 +92,8 @@ main {
   text-align: center;
   padding: 1rem;
   background: $primary-color_dark;
-  color: set-text-color($primary-color_dark);
+  // color: set-text-color($primary-color_dark);
+  color: set-text-color(primary);
   height: 60px;
 }
 

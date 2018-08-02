@@ -4,10 +4,11 @@
 
 // function that returns black or white text based on color of background
 @function set-text-color($color) {
-  @if (lightness($color) > 40) {
-    @return $secondary-color_text;
-  } @else {
+  // @if (lightness($color) > 40) {
+  @if ($color == 'primary') {
     @return $primary-color_text;
+  } @else {
+    @return $secondary-color_text;
   }
 }
 
