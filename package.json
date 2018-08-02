@@ -15,14 +15,15 @@
     "makePages": "echo \"Creating New PAGES Folder\" & mkdir .\\dist\\pages",
     "createDist": "echo \"... => Create FOLDERS Started <= ...\" & npm run removeDist & npm run makeDist & npm run makeCss & npm run makeImg & npm run makeJs & npm run makePages",
     "copyImg": "echo \"Copying Images from DEV to DIST\" & cp -rf dev/img/*.jpg dist/img",
-    "copyJs": "echo \"Copying Javascript from DEV to DIST\" && cp -rf dev/js/*.js dist/js",
     "copyPages": "echo \"Copying Pages from DEV to DIST\" && cp -rf dev/pages/*.html dist/pages",
     "copyIndex": "echo \"Copying Index from DEV to DIST\" && cp -rf dev/index*.html dist",
-    "copyFiles": "echo \"... => Copy FILES Started <= ...\" & npm run copyImg & npm run copyJs & npm run copyPages & npm run copyIndex",
-    "minifyCss": "echo \"... => Minifying CSS <= ...\" & uglifycss dev/css/main.css > dist/css/main.min.css",
+    "copyFiles": "echo \"... => Copy FILES Started <= ...\" & npm run copyImg & npm run copyPages & npm run copyIndex",
+    "minifyCss": "echo \"Minifying CSS\" & uglifycss dev/css/main.css > dist/css/main.min.css",
+    "minifyJs": "echo \"Minifying JavaScript\" & uglifyjs dev/js/main.js > dist/js/main.min.js",
+    "minifyAssets": "echo \"... => Minify Assets Started <= ...\" & npm run minifyCss & npm run minifyJs",
     "gh-pages": "echo \"... => Deploying Project To GH-Pages <= ...\" && gh-pages -d dist",
-    "deployLocal": "echo \"... => Deploy LOCAL Started <= ...\" & npm run createDist & npm run copyFiles & npm run minifyCss & echo \"Deploy LOCAL Complete\"",
-    "deployRemote": "echo \"... => Deploy REMOTE Started <= ...\" & npm run createDist & npm run copyFiles & npm run minifyCss & npm run gh-pages & echo \"... => Deploy REMOTE Complete <= ...\""
+    "deployLocal": "echo \"... => Deploy LOCAL Started <= ...\" & npm run createDist & npm run copyFiles & npm run minifyAssets & echo \"Deploy LOCAL Complete\"",
+    "deployRemote": "echo \"... => Deploy REMOTE Started <= ...\" & npm run createDist & npm run copyFiles & npm run minifyAssets & npm run gh-pages & echo \"... => Deploy REMOTE Complete <= ...\""
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,7 @@
     "gh-pages": "^1.2.0",
     "node-sass": "^4.9.2",
     "npm": "^6.2.0",
+    "uglify-es": "^3.3.9",
     "uglifycss": "0.0.29"
   }
 }
