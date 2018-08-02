@@ -82,10 +82,47 @@ main {
       /* ~~~~~~~~~~~~~~~  */
       margin-top: 20vh; }
 
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #4f0053;
+  color: #fff;
+  height: 60px; }
+
 /*
 
 */
 /* ~~~~~~~~~~~~~~~ base end ~~~~~~~~~~~~~~~ */
+/*
+*/
+/*
+
+*/
+/* ~~~~~~~~~~~~~~~ btn start ~~~~~~~~~~~~~~~ */
+/*
+*/
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    /* ~~~~~~~~~~~~~~~  */
+    background: #808000;
+    color: #fff; }
+
+.btn-dark {
+  background: #4f0053;
+  color: #fff; }
+
+.btn-light {
+  background: #b343b0;
+  color: #fff; }
+
+/*
+
+*/
+/* ~~~~~~~~~~~~~~~ btn end ~~~~~~~~~~~~~~~ */
 /*
 */
 /*
@@ -209,6 +246,12 @@ main {
 /* ~~~~~~~~~~~~~~~ menu end ~~~~~~~~~~~~~~~ */
 /*
 */
+/*
+
+*/
+/* ~~~~~~~~~~~~~~~ about start ~~~~~~~~~~~~~~~ */
+/*
+*/
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -221,7 +264,10 @@ main {
     height: 200px;
     margin: auto;
     border-radius: 50%;
-    border: solid 3px #808000; }
+    border: solid 3px #808000;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat; }
   .about-info .bio {
     /* ~~~~~~~~~~~~~~~  */
     grid-area: bio;
@@ -240,13 +286,37 @@ main {
     padding: 0.5rem;
     border-bottom: solid 3px #808000; }
 
-#main-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #4f0053;
-  color: #fff;
-  height: 60px; }
+/*
 
+*/
+/* ~~~~~~~~~~~~~~~ about end ~~~~~~~~~~~~~~~ */
+/*
+*/
+/*
+
+*/
+/* ~~~~~~~~~~~~~~~ work start ~~~~~~~~~~~~~~~ */
+/*
+*/
+.projects {
+  display: grid;
+  grid-gap: 1rem; }
+  .projects img {
+    /* ~~~~~~~~~~~~~~~  */
+    width: 100%;
+    border: 3px solid #808000; }
+    .projects img:hover {
+      /* ~~~~~~~~~~~~~~~  */
+      opacity: 0.5;
+      border-color: #4f5300;
+      transition: all 0.5s ease-out; }
+
+/*
+
+*/
+/* ~~~~~~~~~~~~~~~ work end ~~~~~~~~~~~~~~~ */
+/*
+*/
 /*
 
 */
@@ -254,10 +324,14 @@ main {
 /*
 */
 @media screen and (min-width: 1171px) {
-  /* ~~~~~~~~~~~~~~~ larger than 1171px ~~~~~~~~~~~~~~~ */ }
+  /* ~~~~~~~~~~~~~~~ larger than 1171px ~~~~~~~~~~~~~~~ */
+  .projects {
+    grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   /* ~~~~~~~~~~~~~~~ between 769px and 1170px ~~~~~~~~~~~~~~~ */
+  .projects {
+    grid-template-columns: repeat(3, 1fr); }
   main .lg-heading {
     /* ~~~~~~~~~~~~~~~  */
     font-size: 4rem;
@@ -266,6 +340,8 @@ main {
 
 @media screen and (max-width: 768px) {
   /* ~~~~~~~~~~~~~~~ smaller than 768px ~~~~~~~~~~~~~~~ */
+  .projects {
+    grid-template-columns: repeat(2, 1fr); }
   main {
     align-items: center;
     text-align: center; }
@@ -300,6 +376,8 @@ main {
 
 @media screen and (max-width: 500px) {
   /* ~~~~~~~~~~~~~~~ smaller than 500px ~~~~~~~~~~~~~~~ */
+  .projects {
+    grid-template-columns: repeat(1, 1fr); }
   main#home h1 {
     /* ~~~~~~~~~~~~~~~  */
     margin-top: 10vh; }

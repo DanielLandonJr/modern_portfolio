@@ -1,0 +1,40 @@
+/*
+
+*/
+/* ~~~~~~~~~~~~~~~ btn start ~~~~~~~~~~~~~~~ */
+/*
+*/
+
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+
+  &:hover {
+    /* ~~~~~~~~~~~~~~~  */
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
+}
+
+.btn-dark {
+  // extends the functionality of .btn to be included in this css style
+  @extend .btn;
+  background: $primary-color_dark;
+  color: set-text-color($primary-color_dark);
+}
+
+.btn-light {
+  // extends the functionality of .btn to be included in this css style
+  @extend .btn;
+  background: $primary-color_light;
+  color: set-text-color($primary-color_dark);
+}
+
+/*
+
+*/
+/* ~~~~~~~~~~~~~~~ btn end ~~~~~~~~~~~~~~~ */
+/*
+*/

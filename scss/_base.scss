@@ -87,6 +87,14 @@ main {
   }
 }
 
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: $primary-color_dark;
+  color: set-text-color($primary-color_dark);
+  height: 60px;
+}
+
 /*
 
 */

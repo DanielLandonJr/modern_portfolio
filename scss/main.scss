@@ -1,11 +1,23 @@
+// globals and mixins
+
 @import 'globals';
 
 @import 'mixins';
 
+// base & other
+
 @import 'base';
+
+@import 'btn';
+
+// external pages
 
 @import 'menu';
 
 @import 'about';
+
+@import 'work';
+
+// responsiveness
 
 @import 'responsive';
